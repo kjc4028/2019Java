@@ -37,7 +37,7 @@ public class RamenFactory {
         
         //배열 스택화
         PriorityQueue<Integer> datesQ = new PriorityQueue<Integer>(new Comparator<Integer>() {
-			@Override
+			@Override //내림차순 설정
 			public int compare(Integer o1, Integer o2) {
 				if(o1 > o2) return -1;
 				if(o1 < o2) return +1;
